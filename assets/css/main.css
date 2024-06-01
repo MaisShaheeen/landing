@@ -440,6 +440,147 @@ ul {
 }
 
 /* end selected-course style*/
+/* start available-courses style*/
+.available-courses {
+    padding: 60px 0;
+}
+.available-courses .container .row {
+ gap: 90px;
+ align-items: flex-start;
+ }
+
+.side-left, .side-right {
+ width: calc( ( 100% - 90px ) / 2);
+}
+.courses{
+    
+box-shadow: 0px 7.437575340270996px 7.437575340270996px rgba(0, 0, 0, 0.2);
+}
+.course {
+    position: relative;
+}
+.courses .info{
+    padding: 10px 10px 10px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.courses .course .photo img {
+    filter: brightness(60%);
+}
+.courses .info h3 {
+    background-color: #545BE8;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    font-size: 15px;
+}
+.courses .course .info span{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    align-self: flex-end;
+}
+.courses .price  {
+padding: 10px;
+}
+.courses .price div:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.courses .price div:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.courses .price div:first-of-type span {
+    color: #545BE8;
+    font-size: 10px;
+}
+.courses .price div:first-of-type h2 {
+    font-size: 15px;
+}
+.courses .price div:last-of-type span {
+    color: #969696;
+    font-size: 15px;
+}
+.side-left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.side-left .courses {
+ width: calc( (100% - 10px) / 2);
+}
+.side-left .courses img {
+    width: 100%;
+}
+.side-right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 40px;
+}
+.side-right span {
+    color: #545BE8;
+}
+.side-right h2 {
+    color: #141E32;
+    font-size:60px;
+}
+.side-right p {
+    color: #969696;
+}
+.side-right a {
+    color: #fff;
+    font-family: var(--subFont);
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: var(--mainColor);
+    width: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+@media (max-width:1030px){
+    .available-courses .container .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .side-left  {
+        width: 100%;  
+    }
+    .side-right {
+        width: 100%;
+        text-align: center;
+    }
+    .side-right a{
+        align-self: center;
+    }
+}
+@media (max-width:600px){
+    .available-courses .container .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .side-left  {
+        width: 100%;  
+    }
+    .side-left .courses{
+        width: 100%;
+    }
+}
+
+/* end available-courses style*/
+
 /* start testimonials style*/
 .testimonials {
     text-align: center;
